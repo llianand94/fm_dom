@@ -12,16 +12,16 @@ class Slider{
   get currendSlide(){
     return this._images[this.currendIndex];
   }
-  set currendIndex(value){
-    if(typeof value!=='number'|| Number.isInteger(v)|| v<0){
-      throw TypeError('Value');
+  set currendIndex(v){
+    if(typeof v!=='number'|| !Number.isInteger(v) || v<0){
+      throw new TypeError();
     }
     this._currendIndex = v;
   }
   next(){
-    return this._currendIndex+1;
+    return (this._currendIndex+1)%this._images.length;
   }
   prev(){
-    return this._currendIndex-1;
+    return (this._currendIndex-1+this._images.length)%this._images.length;
   }
 }
