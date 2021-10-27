@@ -18,10 +18,10 @@ class Slider{
     }
     this._currendIndex = v;
   }
-  next(){
+  get nextIndex(){
     return (this._currendIndex+1)%this._images.length;
   }
-  prev(){
+  get prevIndex(){
     return (this._currendIndex-1+this._images.length)%this._images.length;
   }
 }
