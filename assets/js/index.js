@@ -6,25 +6,26 @@ const img = document.querySelector('.slide>img');
 
 const [btnPrev,btnNext] = document.querySelectorAll('.slider-container>button');
 
-console.log(img);
-console.log(btnPrev);
-console.log(btnNext);
-
 function updateView(){
   img.setAttribute('src',slider.currendSlide);
 }
 updateView();
 
 img.addEventListener('wheel', ()=>{
-  slider.currendIndex= slider.next()
+  slider.currendIndex= slider.nextIndex
   updateView();});
-  
+
+  const btnSliderHandler = (direction = 'next') => () => {
+    slider.currendIndex = slider[direction==='next'? 'nextIndex' : 'prevIndex'];
+    updateView();
+  }
+
 btnNext.addEventListener('click', ()=>{
-  slider.currendIndex= slider.next()
+  slider.currendIndex= slider.nextIndex
   updateView();
 });
 btnPrev.addEventListener('click', ()=>{
-  slider.currendIndex= slider.prev()
+  slider.currendIndex= slider.prevIndex
   updateView();
 });
 
