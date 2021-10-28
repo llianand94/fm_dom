@@ -3,29 +3,19 @@ const imagesDB = ['https://oir.mobi/uploads/posts/2021-05/1622262892_61-oir_mobi
 
 const slider = new Slider(imagesDB);
 const img = document.querySelector('.slide>img');
+const btn = document.querySelector('.btn')
 
-const [btnPrev,btnNext] = document.querySelectorAll('.slider-container>button');
 
 function updateView(){
   img.setAttribute('src',slider.currendSlide);
 }
 updateView();
 
-img.addEventListener('wheel', ()=>{
-  slider.currendIndex= slider.nextIndex
-  updateView();});
 
-  const btnSliderHandler = (direction = 'next') => () => {
-    slider.currendIndex = slider[direction==='next'? 'nextIndex' : 'prevIndex'];
-    updateView();
-  }
-
-btnNext.addEventListener('click', ()=>{
+btn.addEventListener('click', (e)=>{
+  console.log(e.target);
   slider.currendIndex= slider.nextIndex
   updateView();
 });
-btnPrev.addEventListener('click', ()=>{
-  slider.currendIndex= slider.prevIndex
-  updateView();
-});
+
 

@@ -19,7 +19,7 @@ class Slider{
     this._currendIndex = v;
   }
   get nextIndex(){
-    return (this._currendIndex+1)%this._images.length;
+    return (this._currendIndex+1)%(this._images.length-1);
   }
   get prevIndex(){
     return (this._currendIndex-1+this._images.length)%this._images.length;
