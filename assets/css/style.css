@@ -35,16 +35,17 @@ justify-content: space-around;
   height: 22rem;
 }
 .initials{
-height: inherit;
-background-color: lightcoral;
-display: flex;
-justify-content: center;
-align-items: center;
-color: lightseagreen;
-font-size: 6rem;
+  height: inherit;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightseagreen;
+  font-size: 6rem;
 }
 .cardImage{
   width: inherit;
+  height: inherit;
   position: absolute;
   top: 0;
   bottom: 0;
