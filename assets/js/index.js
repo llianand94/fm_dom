@@ -14,6 +14,7 @@ function createActorCards(actor){
   const img = document.createElement('img');
   img.classList.add('cardImage')
   img.setAttribute('src', actor.photo);
+  img.setAttribute('alt', actor.name);
 
   const name = document.createElement('h2');
   name.classList.add('cardName');   
@@ -30,4 +31,4 @@ function createActorCards(actor){
 }
 
 
-cardsContainer.append(...HTMLElements);
+// cardsContainer.append(...HTMLElements);
