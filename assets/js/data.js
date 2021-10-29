@@ -6,10 +6,10 @@ const actors = [
     photo : 'https://www.filmibeat.com/img/popcorn/profile_photos/tom-cruise-20190610151455-4602.jpg',
   },
   {
-      id: 2,
-      name : 'Robert Downey',
-      birthdate : 'April 4, 1965',
-      photo : 'https://tr.web.img3.acsta.net/c_310_420/pictures/210/017/21001798_20130426172912097.jpg',
+    id: 2,
+    name : 'Robert Downey',
+    birthdate : 'April 4, 1965',
+    photo : 'https://tr.web.img3.acsta.net/c_310_420/pictures/210/017/21001798_20130426172912097.jpg',
   },
   {
       id: 3,

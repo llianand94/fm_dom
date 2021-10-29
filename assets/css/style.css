@@ -1,0 +1,38 @@
+:root{
+font-size: 16px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+.cardsHeading{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.cardsContainer{
+display: flex;
+flex-flow: wrap row;
+justify-content: space-around;
+}
+.cardWrapper{
+  border: 3px solid rgb(233, 233, 233);
+  margin: 1rem;
+}
+.cardContainer{
+  text-align: center;
+}
+
+.cardImage{
+  width: 20rem;
+  height: 22rem;
+  object-fit: cover;
+  object-position: top;
+}
+.cardName,
+.cardDesctiption{
+  margin: 1rem;
+}
