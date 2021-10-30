@@ -1,7 +1,69 @@
+<<<<<<< HEAD
 #root{
   height: 100px;
   border: 3px solid grey;
   display: flex;
   align-items: center;
   justify-content: center;
+=======
+:root{
+font-size: 16px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+.cardsHeading{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.cardsContainer{
+display: flex;
+flex-flow: wrap row;
+justify-content: space-around;
+}
+.cardWrapper{
+  display: flex;
+  align-items: flex-end;
+  
+  border: 3px solid rgb(233, 233, 233);
+  margin: 1rem;
+}
+.cardContainer{
+  width: 20rem;
+  text-align: center;
+}
+.cardImageWrapper{
+  width: inherit;
+  position: relative;
+  height: 22rem;
+}
+.initials{
+  height: inherit;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightseagreen;
+  font-size: 6rem;
+}
+.cardImage{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  object-position: top;
+}
+.cardName,
+.cardDesctiption{
+  margin: 1rem;
+>>>>>>> 79c11b83aa93212654a8213485374a26133da97e
 }
