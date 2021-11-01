@@ -1,25 +1,96 @@
 :root{
   font-size: 16px;
+  font-family: sans-serif;
 }
 section{
-  text-align: center;
+  padding: 0 1rem;
 }
-.img-wrapper{
-  width: 50vw;
-  height: 50vw;
-  margin: 0 auto;
-  background-color: cyan;
+button{
+  padding: 1rem;
+  cursor: pointer;
 }
-.img-wrapper>img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+button+button{
+  margin-left: 0.3rem;
 }
-.img-wrapper+button{
-  display: block;
-  margin: 2rem auto 0rem;
+button, .wrapper{
+  border: 1px solid rgb(51, 225, 248);
+}
+.wrapper{
+  display:flex;
+  align-items: stretch;
+  width: 90vw;
+  height: 40vw;
+  margin-top: 1.5rem;
   padding: 0.5rem;
-  border: 1px solid magenta;
-  border-radius: 6px;
-  font-size: 1.2rem;
+}
+.wrapper>*{ 
+  padding:1.5rem 1.5rem;
+  background-color: cadetblue;
+  border: 1px dashed rgb(74, 74, 253);
+  font-size: 1.5rem;  
+}
+button:hover{
+  background-color: rgb(81, 90, 90);
+  color: antiquewhite;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
