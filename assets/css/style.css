@@ -1,96 +1,59 @@
 :root{
   font-size: 16px;
-  font-family: sans-serif;
 }
-section{
-  padding: 0 1rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-button{
-  padding: 1rem;
-  cursor: pointer;
+ul{
+  list-style: none;
 }
-button+button{
-  margin-left: 0.3rem;
+.cardsHeading{
+  text-align: center;
+  font-size: 2rem;
 }
-button, .wrapper{
-  border: 1px solid rgb(51, 225, 248);
+.cardsContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
-.wrapper{
-  display:flex;
-  align-items: stretch;
-  width: 90vw;
-  height: 40vw;
-  margin-top: 1.5rem;
-  padding: 0.5rem;
+.cardWrapper{
+  display: flex;
+  align-items: flex-end;
+  margin: 1rem;
+  border: 3px solid #ddd;
 }
-.wrapper>*{ 
-  padding:1.5rem 1.5rem;
-  background-color: cadetblue;
-  border: 1px dashed rgb(74, 74, 253);
-  font-size: 1.5rem;  
+.cardContainer{
+  width: 300px;
+  text-align: center;
 }
-button:hover{
-  background-color: rgb(81, 90, 90);
-  color: antiquewhite;
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cardImageWrapper{
+  width: inherit;
+  position: relative;
+  height: 300px;
+}
+.initials{
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(200, 107, 107);
+  color:#fff;
+  font-size: 4rem;
+}
+.cardImage{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  object-fit: cover;
+  object-position: top;
+}
+.cardName,
+.cardDescription{
+  margin: 1rem;
 }
