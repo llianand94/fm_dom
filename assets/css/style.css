@@ -2,58 +2,27 @@
   font-size: 16px;
 }
 *{
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-ul{
-  list-style: none;
+#root-form{
+  padding: 1rem;
 }
-.cardsHeading{
-  text-align: center;
-  font-size: 2rem;
+#root-form>*{
+  padding: 0.5rem;
+  border: 1px solid cadetblue;
 }
-.cardsContainer{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+#root-form>button{
+  margin-left:1rem;
+  cursor: pointer;
 }
-.cardWrapper{
-  display: flex;
-  align-items: flex-end;
-  margin: 1rem;
-  border: 3px solid #ddd;
+#root-form>button:hover{
+  border: 1px solid rgb(135, 225, 228);
+  background-color: rgb(42, 69, 70);
+  color: rgb(204, 229, 230);
 }
-.cardContainer{
-  width: 300px;
-  text-align: center;
+#list>*{
+  width: 40vw;
+  border: 1ps solid bisque;
+  background-color: blanchedalmond;
 }
-.cardImageWrapper{
-  width: inherit;
-  position: relative;
-  height: 300px;
-}
-.initials{
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(200, 107, 107);
-  color:#fff;
-  font-size: 4rem;
-}
-.cardImage{
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  object-fit: cover;
-  object-position: top;
-}
-.cardName,
-.cardDescription{
-  margin: 1rem;
-}
+
