@@ -27,4 +27,17 @@ form.addEventListener('submit', (e)=>{
 
 //  const dateValidator= /^([12][09]\d{2})\/([01]\d)\/([0-3]\d)$/;
 //  // осталось ограничить в $1 между 1941-2021..
-//  const fileNameValidator = /^([^\\\/:*?"<>|])+\.((jpg)|(png))$/;
+
+const fileNameValidator = /^([^\\\/:*?"<>|])+\.((jpg)|(png))$/;
+
+
+function start(counter=1){
+  if(counter < 11){
+    setTimeout(function(){
+      counter++;
+      console.log(counter);
+      start(counter);
+    }, 500);
+  }
+}
+start();
