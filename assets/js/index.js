@@ -31,8 +31,8 @@ form.addEventListener('submit', (e)=>{
 const fileNameValidator = /^([^\\\/:*?"<>|])+\.((jpg)|(png))$/;
 
 
-function start(counter=1){
-  if(counter < 11){
+function start(counter=0){
+  if(counter < 10){
     setTimeout(function(){
       counter++;
       console.log(counter);
