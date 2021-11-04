@@ -30,6 +30,15 @@ form.addEventListener('submit', (e)=>{
 
 const fileNameValidator = /^([^\\\/:*?"<>|])+\.((jpg)|(png))$/;
 
+function counter(){
+  let i=1;
+  const id = setInterval(() => {
+    console.log(i++);
+        if(i===11){
+      clearInterval(id);
+    }
+  }, 500);
+}
 
 function start(counter=0){
   if(counter < 10){
