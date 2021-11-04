@@ -1,0 +1,14 @@
+[
+  {"about":"none",
+    "age":50,
+    "isMale":true,
+    "hasSomething":null,
+    "arr":["first","second","third"]
+  },
+  {"about":"string",
+    "age":50,
+    "isMale":true,
+    "hasSomething":null,
+    "arr":["first","second","third"]
+  }
+]
